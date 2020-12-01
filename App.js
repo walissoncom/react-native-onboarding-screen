@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Image, StyleSheet, View } from 'react-native';
+import { Image, StyleSheet, Text, View } from 'react-native';
 import AppIntroSlider from 'react-native-app-intro-slider';
 
 const slides = [
@@ -38,6 +38,26 @@ export default class App extends Component {
             width: '100%'
           }}
         />
+        <Text
+          style={{
+            paddingTop: 25,
+            paddingBottom: 10,
+            fontSize: 23,
+            fontWeight: 'bold',
+            color: '#21465B',
+            alignSelf: 'center'
+          }}>
+          {item.title}
+        </Text>
+        <Text
+          style={{
+            textAlign: 'center',
+            color: '#b5b5b5',
+            fontSize: 15,
+            paddingHorizontal: 30
+          }}>
+          {item.text}
+        </Text>
       </View>
     )
   }
